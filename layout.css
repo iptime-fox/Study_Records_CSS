@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background: #444;
+}
+
+header,
+footer {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0;
+  text-align: center;
+  background: #666;
+}
+
+footer {
+  margin-top: 0.5rem;
+}
+
+section {
+  margin-top: 0.5rem;
+  display: flex;
+  width: 100%;
+  _background: #666;
+}
+
+section > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+  background: #666;
+}
+
+section > article {
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+section > article > div {
+  background: #888;
+  width: 80%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+}
+
+nav {
+  width: 30%;
+}
+article {
+  width: 40%;
+  margin: 0 0.25rem;
+}
+aside {
+  width: 30%;
+}
