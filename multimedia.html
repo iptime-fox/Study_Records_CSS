@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{_width: 200px; height:200px;}
+    video{width: 400px;}
+  </style>
+</head>
+<body>
+  <!-- 1. 사진에 크기 지정을 안하면 원래 사이즈의 사진이 구현된다 -->
+  <!-- 2. 사진의 사이즈를 지정할때는 가로나 세로 중 하나만 지정한다. -->
+  <!-- 3. alt는 사진의 정보를 제공하고, 특히 사진의 설명을 음성으로 알려줄때 사용된다. 따라서 사용안 할 경우 웹 접근성 점수가 떨어진다(포트폴리오 만들떄 주의)  -->
+
+  <img src="data/exo.webp" alt="엑소">
+
+  <!-- 1. 비디오 태그는 source에 주소를 입력하고 video 태그에 옵션을 입력한다 -->
+  <!-- 2. autoplay는 muted와 함께 사용해야 한다. -->
+  <!-- 3. mp4 확장 파일은 모든 브라우저에서 사용가능하다. -->
+  
+  <video controls loop autoplay muted>
+    <source src="data/video.mp4">
+  </video>
+<div>
+  <h1></h1>로 검색하셨습니다.
+</div>
+  
+<script>
+  const keyparam = document.location.href.split("=")[1];
+  const decparam = decodeURI(keyparam);
+  const h1 = document.querySelector('h1');
+
+  h1.textContent = decparam;
+</script>
+</body>
+</html>

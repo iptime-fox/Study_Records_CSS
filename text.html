@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- -- 모든 태그는 블록 속성과 인라인 속성 중 하나를 가진다.
+  블록 : 블록은 한 라인을 모두 차지하고, 따라서 두번째 태그는 개행이 된다. 디자인에 제약이 없다
+  인라인 : 인라인은 자신의 크기만큼 공간을 차지하고 디자인에 제약이 있다. 
+  (p태그 빼고는 거의 다 인라인)
+  br : 개행-->
+
+  <!-- 1. 디자인된 텍스트 -->
+  <i style="font-size:30px;">기울임 태그</i>
+  <em style="font-size:30px;">기울임 태그</em><br>
+
+  <span>----------------</span><br>
+
+  <b style="font-size:30px;">두꺼운 글씨</b>
+  <strong style="font-size:30px;">두꺼운 글씨</strong>
+
+  <div>----------</div>
+
+  <div class="logo">L<i>O</i>G<em>O</em></div>
+  
+  <!-- 2. heading tag -->
+  <h1>header 1</h1>
+  <h2>header 2</h2>
+  <h3>header 3</h3>
+  <h4>header 4</h4>
+  <h5>header 5</h5>
+  <h6>header 6</h6>
+
+  <!-- 페이지의 중요한 콘텐츠 제목을 표시한다
+  중요도는 h1 ~ h6 순이다
+  h1 태그는 한 페이지당 하나만 쓰기를 권장한다
+  h1 태그 이후 순서는 누락없이 사용하길 권장한다 -->
+  
+  <!-- 3. a link **** -->
+  <a href="http://www.naver.com" target="_blank">네이버로 가기</a>
+  <a href="http://www.daum.net">다음으로 가기</a>
+  <!-- a 태그는 다른 페이지와 링크로 연결시킨다
+  보통 다른 사이트로의 연결보다는 자체 사이트의 페이지안 이동에도 많이 사용되며, 종종 같은 페이지간 이동에도 사용한다 -->
+
+  <!-- 4. ol, ul *** -->
+ <ol>
+  <li>프로토스</li>
+  <li>테란</li>
+  <li>저그</li>
+  <li>랜덤</li>
+ </ol>
+
+ <!-- ol: ordered list의 이니셜이고 순서가 정해지는 리스트 -->
+ 
+ <ul>
+  <li>프로토스</li>
+  <li>테란</li>
+  <li>저그</li>
+  <li>랜덤</li>
+ </ul>
+
+ <ul>
+  <li>리스트1</li>
+  <li>리스트2</li>
+  <li>리스트3</li>
+  <li>리스트4</li>
+ </ul>
+
+ <!-- ul : unordered list의 이니셜이며 순서가 없는 리스트 -->
+ <!-- ol, ur 모두 자식 요소로 li 태그를 반드시 가져야 한다. -->
+  
+ <header>
+  <span><a href="#">LOGO</a></span>
+  <div class="nav">
+    <ul>
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">PRODUCT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </div>
+ </header>
+ 
+  <!-- 5.table -->
+ <table border>
+  <tr><td colspan="3" rowspan="2"></td><td></td></tr>
+  <tr><td colspan="3"></td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+ </table>
+
+</body>
+</html>

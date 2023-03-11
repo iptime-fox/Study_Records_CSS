@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> 
+  <style>
+    .search{width: 100%; height: auto; display: flex; justify-content: flex-end;}
+    input{border: 1px solid skyblue; color: #333; padding: .75rem;border-radius: 0;}
+
+    button{border: 1px solid skyblue; background: skyblue; color: #fff; padding: 0.75rem; font-size: 1.2rem;}
+
+    input:focus{outline: 0;}
+    input::placeholder{color: #888;}
+
+    textarea{width: 300px; height: 200px; resize: none;}
+  </style>
+</head>
+<body>
+  <!-- 1.action 속성은 서버사이드에 어떤 파일로 연결되는지 경로를 지정한다 -->
+  <!-- 2. method는 서버로 데이터를 전달하는 방식을 지정한다.get과 post가 있는데 디폴트는 get이다 -->
+  <!-- 3. 보안에 신경쓰지 않아도 되는 데이터나 조회 데이터의 경우 주로 get을 사용하고, 많은 데이터 또는 입력 데이터의 경우 post를 사용한다 -->
+
+  <form onsubmit="return false" method="">
+    <div class="search">
+      <input type="text" placeholder="검색어를 입력해 주세요">
+      <button><i class="ri-search-line"></i></button>
+    </div>
+  </form>
+
+
+<form action="#">
+  <!-- <input type="number"><br> -->
+  <input type="file"><br>
+  <input type="button" value="제출"><br>
+  <input type="password"><br>
+  <!-- <input type="range"><br> -->
+  <!-- <input type="color"><br> -->
+  <input type="date"><br>
+  <!-- <input type="email"><br> -->
+  <textarea></textarea>
+</form>
+
+  <!-- - label -->
+  <!-- - label은 input 데이터와 연결하는 태그이다 -->
+  <!-- - label의 for 속성값과 input의 id 속성값이 같아야 한다 -->
+  <!-- - label을 분리하여 사용하면 텍스트와 input 박스를 다로 디자인 할 수 잇어서 편하다 -->
+  <label for="id">아이디 :</label><input type="text" id="id"><br>
+  <label for="check">선택 :</label><input type="checkbox" id="check"><br>
+  
+  <!-- - checkbox -->
+  <!-- 동시에 여러개 체크가 된다 -->
+  이름 : <input type="checkbox"><br>
+  나이 : <input type="checkbox"><br><br>
+
+  <!-- - radio -->
+  LG : <input type="radio" name="cell"><br>
+  KT : <input type="radio" name="cell"><br>
+  SK : <input type="radio" name="cell"><br>
+
+  <div>------------------------</div>
+
+  <select name="" id="">
+    <option value="">1999</option>
+  </select>
+
+  <select>
+    <optgroup label="스타크래프트">
+      <option value="">프루토스</option>
+      <option value="">테란</option>
+      <option value="">저그</option>
+      <option value="">랜덤</option>
+    </optgroup>
+    <optgroup label="리니지">
+      <option value="">기사</option>
+      <option value="">법사</option>
+      <option value="">오크</option>
+
+    </optgroup>
+    
+  </select>
+
+  <script>
+    const btn = document.querySelector("button");
+
+    btn.addEventListener("click", function(){
+      const msg = document.querySelector('input').value;
+      // alert(msg);
+      if(!msg){
+        alert('검색어를 입력해 주세요');
+        return;
+      }
+      location.href = `multimedia.html?key=${msg}`;
+    });
+  </script>
+</body>
+</html>

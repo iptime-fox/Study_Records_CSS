@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+  <!-- 
+  - 기존 구획을 정의하는 태그는 div와 span으로 만들었다
+  -div와 span은 구획을 정의한다는 의미만을 가지고 있으며, 특정한 디자인을 부여하지 않는 이상 아무런 모양이 없다.
+  -div는 블록 태그이고 span은 인라인 태그이다.  -->
+
+  <!-- <div>div <span>태그</span> 입니다.
+    <div></div>
+    <div></div>
+  </div> -->
+
+<!-- 1. header **** : 페이지 상단 네비게이션과 로고를 포함하는 박스
+2. footer **** : 페이지 하단 기업 정보 등을 담는 박스
+3. section *** : 페이지 상위 정보를 담는 콘텐츠 박스
+4. article ** : 페이지의 이미지나 글 등을 담는 박스
+5. nav * : 네비게이션을 담는 박스
+6. aside * : 페이지 좌우에 추가 정보 등을 담는 박스 -->
+
+<div class="wrapper">
+  <header>HEADER</header>
+  <section>
+    <nav>NAV</nav>
+    <article>
+      <div>SECTION</div>
+      <div>HEADER</div>
+      <div>ARTICLE</div>
+      <div>ARTICLE</div>
+    </article>
+    <aside>ASIDE</aside>
+  </section>
+  <footer>FOOTER</footer>
+
+</div>
+
+
+</body>
+</html>
