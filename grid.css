@@ -8,21 +8,20 @@ body{font-family: 'Fredoka One',sans-serif;width: 100%; height: auto;}
 
 
 .container {display: grid; gap: 10px;
-  grid-template-columns: 150px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 130px 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "logo a a b b"
   "nav a a b b"
   "nav e e e e"
   "nav f g g g"
   "nav h g g g"
-  "nav c c d d"
-
-
-  ;
+  "nav c c d d" ;
+  
 }
 
+.container .item img:hover{opacity: 0.6;transition: all 0.3s;}
 .item:nth-child(1){grid-area: logo;}
-.item:nth-child(1) img{width: 150px;}
+.item:nth-child(1) img{width: 130px;}
 
 .item:nth-child(2){grid-area: nav; font-size: 20px;}
 .container .item:nth-child(2)  li a:hover{color: green;}
@@ -50,4 +49,44 @@ body{font-family: 'Fredoka One',sans-serif;width: 100%; height: auto;}
 
 .item:nth-child(10){grid-area: h;}
 .container .item:nth-child(10) img{ width: 100%;}
+.mem{text-align: center;}
+.sns{display: flex;column-gap:0;padding: 0;margin: 0; }
+
+
+/* responsive design */
+@media screen and (max-width:1023px){
+  .container {display: grid; gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo nav nav nav"
+    "a a b b"
+    "a a b b"
+    "e e e e"
+    "f g g g"
+    "h g g g"
+    "c c d d"
+    ;
+  }
+  .item:nth-child(2){display: flex;align-items: center; justify-content:center;}
+  .item:nth-child(2) > ul{display: flex; font-size: 14px; column-gap: 0;}
+}
+@media screen and (max-width:779px){
+  .container {display: grid; gap: 10px;
+    grid-template-columns: 120px 1fr;
+    grid-template-areas:
+    "logo nav"
+    "a a"
+    "b b"
+    "e e"
+    "f f"
+    "g g"
+    "h h"
+    "c c"
+    "d d"
+    ;
+  }
+  .item:nth-child(1) img{width: 110px;}
+}
+
+  
 
