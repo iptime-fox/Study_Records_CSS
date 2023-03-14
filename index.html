@@ -4,122 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maldiv</title>
+  <title>Time</title>
+
+  <!-- AWESOME FONT LINK -->
   <link
-     href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-     rel="stylesheet"
-   />
-   <link rel="stylesheet" href="css/style.css">
+  href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
-  <header>
-    <h1>logo</h1>
-    <ul id="gnb">
-      <li><a href="#"><i class="fa fa-header"></i>Hotel</a></li>
-      <li><a href="#"><i class="fa fa-building-o"></i>Facility</a></li>
-      <li><a href="#"><i class="fa fa-suitcase"></i>Business</a></li>
-      <li><a href="#"><i class="fa fa-cutlery"></i>Restaurant</a></li>
-    </ul>
-    <div class="sns">
-      <a href="#"><img src="img/sns1.png" alt="about"></a>
-      <a href="#"><img src="img/sns2.png" alt="contact"></a>
-      <a href="#"><img src="img/sns3.png" alt="facebook"></a>
-      <a href="#"><img src="img/sns4.png" alt="twitter"></a>
-      <a href="#"><img src="img/sns5.png" alt="etc"></a>
-    </div>
-  </header>
 
-  <nav>
-    <span>
-      <a href="#"><img src="img/util1.png" alt=""></a>
-      <a href="#"><img src="img/util2.png" alt=""></a>
-    </span>
-    <span>
-      <a href="#"><img src="img/util3.png" alt=""></a>
-      <a href="#"><img src="img/util4.png" alt=""></a>
-    </span>
-  </nav>
-  <section>
-    <article>
-      <div class="bg bg1">
-        <span>Maldives</span>
+  <!-- Main Wrapper -->
+  <div id="wrap" class="morning">
+
+    <!-- 배경 구름 -->
+    <img src="img/cloud1.png" alt="배경구름" class="pc-cloud1">
+    <img src="img/cloud2.png" alt="배경구름" class="pc-cloud2">
+    
+    <!-- 상단 헤더 -->
+    <header>
+      <div class="logo">
+        <!-- <a href="#">
+          <img src="img/logo_b.png" alt="logo">
+        </a> -->
       </div>
-    </article>
-    <article>
-      <div class="txt">
-        <i class="fa fa-arrow-right"></i>
-        <p>
-          <strong>A Whole New World</strong>
-          <em>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</em>
-        </p>
+      <div class="navs">
+        <ul class="gnb">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <ul class="sns">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        </ul>
       </div>
+    </header>
+   <!-- 하단 모드 -->
+    <div class="modes">
+      <ul>
+        <li class="active">morning</li>
+        <li>afternoon</li>
+        <li>evening</li>
+        <li>night</li>
+      </ul>
+    </div>
+
+    <!-- 슬로건박스 -->
+    <article class="slogan">
+      <p > <strong>Lorem</strong> Ipsum </p>
+        <em>Lorem Ipsum is simply dummy text of the printing Materials</em>
+     
     </article>
-    <article>
-      <div class="txt">
-        <i class="fa fa-spin fa-refresh"></i>
-        <p>
-          <strong>Reservation</strong>
-        </p>
-      </div>
-    </article>
-    <article>
-      <div class="bg bg2">
-        <span>Suite</span>
-      </div>
-    </article>
-    <article>
-      <div class="bg bg3">
-        <span>Surf</span>
-      </div>
-    </article>
-    <article>
-      <div class="txt">
-        <i class="fa fa-arrow-right"></i>
-        <p>
-          <strong>A Dazzling Place</strong>
-          <em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500s</em>
-        </p>
-      </div>
-    </article>
-    <article>
-      <div class="bg bg4">
-        <span>Sauna</span>
-      </div>
-    </article>
-    <article>
-      <div class="txt">
-        <i class="fa fa-arrow-right"></i>
-        <p>
-          <strong>Hot Spot</strong>
-          <em>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</em>
-        </p>
-      </div>
-    </article>
-    <article>
-      <div class="bg bg5">
-        <span>Dinner</span>
-      </div>
-    </article>
-    <article>
-      <div class="bg bg6">
-        <span>Spa</span>
-      </div>
-    </article>
-    <article>
-      <div class="txt">
-        <i class="fa fa-arrow-right"></i>
-        <p>
-          <strong>Open Space</strong>
-          <em>Lorem Ipsum is simply dummy text </em>
-        </p>
-      </div>
-    </article>
-    <article>
-      <div class="bg bg7">
-        <span>Tour</span>
-      </div>
-    </article>
-  </section>
+
+    <!-- 모바일 사진 -->
+    <div class="mobile-frame">
+      <p>
+        <!-- 모바일 시계 -->
+        <span>00</span> : <span>00</span> : <span>00</span>
+        <!-- 배경구름 -->
+        <img src="img/cloud1.png" alt="배경구름" class="m-cloud1">
+        <img src="img/cloud2.png" alt="배경구름" class="m-cloud2">
+      </p>
+    </div>
+  </div>
+
   
+
+   <!-- jQuery CDN LINK -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="js/custom_jq.js"></script>
 </body>
 </html>
